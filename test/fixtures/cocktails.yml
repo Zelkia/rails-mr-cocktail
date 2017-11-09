@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name,: MyString
+  complexity: 
+  rating: 
+  description,: MyString
+  glass: MyString
+
+two:
+  name,: MyString
+  complexity: 
+  rating: 
+  description,: MyString
+  glass: MyString
