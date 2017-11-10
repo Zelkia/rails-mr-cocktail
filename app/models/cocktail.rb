@@ -5,4 +5,6 @@ class Cocktail < ApplicationRecord
   validates :complexity, :rating, :inclusion => { in: [nil, 1, 2, 3, 4, 5] }
   validates :name, presence: true
   validates :name, uniqueness: true
+
+  mount_uploader :photo, PhotoUploader
 end
