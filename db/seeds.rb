@@ -43,7 +43,7 @@ cocktails_attributes = [
   },
   {
     name: 'Hurricane',
-    description: "Fruity cocktail with different types of rum and carribean fruit",
+    description: "Fruity cocktail with different types of tropical flavours",
     complexity: 1,
     rating:  2,
     glass: 'Highball'

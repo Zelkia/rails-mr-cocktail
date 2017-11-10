@@ -1,2 +1,48 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.card-container {
+  width: 18vw;
+  height: 20vw;
+  margin: 20px;
+}
+
+.card-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  a {
+    font-size: 24pt;
+    text-decoration: none;
+    color: #fff;
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 20px;
+    background-color: #ccc;
+    color: #444;
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+  }
+}
+
+.card-body-inner {
+  padding: 10px 10px;
+}
+
+.gold {
+  color: #ffcc00;
+}
+
+.card-button {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}

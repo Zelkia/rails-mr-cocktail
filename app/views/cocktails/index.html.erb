@@ -1,9 +1,35 @@
 <h1>Mr Cocktail.</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %> </li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-md-4 col-lg-3">
+        <div class="card-container">
+          <div class="card-body">
+            <div class=card-body-inner><%= link_to cocktail.name, cocktail_path(cocktail) %>
+            <br />
+            <% cocktail.rating.times do %>
+              <i class='fa fa-star gold'></i>
+            <% end %>
+            <br />
+            <% cocktail.complexity.times do %>
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            <% end %>
+            </div>
+            <div class="card-footer"><%= cocktail.description %></div>
+          </div>
 
-<%= link_to 'new', new_cocktail_path, class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="col-xs-12 col-md-4 col-lg-3">
+      <div class="card-container">
+        <div class="card-body"><%= link_to 'new', new_cocktail_path, class: 'btn btn-primary card-button' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
